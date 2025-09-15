@@ -1,9 +1,19 @@
-"dependencies": {
-  "next": "13.4.19",
-  "react": "18.2.0",
-  "react-dom": "18.2.0",
-  "ytdl-core": "^4.11.5",
-  "instagram-url-direct": "^2.0.7",
-  "tiktok-scraper": "^1.4.36",
-  "fb-video-downloader": "^1.0.4"
+{
+  "name": "hjh-multi-video-downloader",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "13.4.19",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "ytdl-core": "^4.11.5",
+    "instagram-url-direct": "^2.0.7",
+    "tiktok-scraper": "^1.4.36",
+    "fb-video-downloader": "^1.0.4"
+  }
 }

@@ -10,9 +10,6 @@
     "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "@xaviabot/fb-downloader": "^1.0.0",
-    "@tobyg74/tiktok-api-dl": "^1.0.0",
-    "ytdl-core": "^4.11.5",
-    "instagram-url-direct": "^1.0.0"
+    "instagram-url-direct": "^1.0.6"
   }
 }

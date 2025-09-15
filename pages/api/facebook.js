@@ -1,21 +1,20 @@
-import fbvid from "fb-video-downloader";
-
 export default async function handler(req, res) {
   const { url } = req.query;
-  if (!url) return res.status(400).json({ error: "Facebook URL required" });
+  if (!url) {
+    return res.status(400).json({ error: "Facebook URL is required" });
+  }
 
   try {
-    const result = await fbvid(url);
+    const apiUrl = `https://api.fdownloader.net/api/v2/facebook?url=${encodeURIComponent(url)}`;
+    const response = await fetch(apiUrl);
+    const data = await response.json();
 
-    if (result?.sd) {
-      return res.status(200).json({ video: result.sd });
-    } else if (result?.hd) {
-      return res.status(200).json({ video: result.hd });
+    if (data && data.video && data.video.length > 0) {
+      return res.status(200).json({ video: data.video[0].url });
+    } else {
+      return res.status(404).json({ error: "No video found" });
     }
-
-    return res.status(404).json({ error: "No video found at this URL" });
   } catch (err) {
-    console.error("Facebook API Error:", err);
-    return res.status(500).json({ error: "Failed to fetch Facebook video" });
+    return res.status(500).json({ error: "Failed: " + err.message });
   }
 }

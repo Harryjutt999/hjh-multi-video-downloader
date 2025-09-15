@@ -86,7 +86,12 @@ export default function Home() {
         {/* Platform select */}
         <label
           htmlFor="platformSelect"
-          style={{ display: "block", fontSize: "14px", margin: "10px 0 8px", color: "#00cfff" }}
+          style={{
+            display: "block",
+            fontSize: "14px",
+            margin: "10px 0 8px",
+            color: "#00cfff",
+          }}
         >
           𝘊𝘩𝘰𝘰𝘴𝘦 𝘗𝘭𝘢𝘵𝘧𝘰𝘳𝘮
         </label>
@@ -107,16 +112,21 @@ export default function Home() {
             textAlign: "center",
           }}
         >
-          <option value="tiktok">TikTok</option>
-          <option value="youtube">YouTube</option>
           <option value="instagram">Instagram</option>
           <option value="facebook">Facebook</option>
+          <option value="tiktok">TikTok</option>
+          <option value="youtube">YouTube</option>
         </select>
 
         {/* URL input */}
         <label
           htmlFor="urlInput"
-          style={{ display: "block", fontSize: "14px", margin: "10px 0 8px", color: "#00cfff" }}
+          style={{
+            display: "block",
+            fontSize: "14px",
+            margin: "10px 0 8px",
+            color: "#00cfff",
+          }}
         >
           𝘗𝘢𝘴𝘵𝘦 𝘝𝘪𝘥𝘦𝘰 𝘜𝘙𝘓
         </label>
@@ -205,4 +215,4 @@ export default function Home() {
       </div>
     </div>
   );
-  }
+      }

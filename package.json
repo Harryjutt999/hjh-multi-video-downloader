@@ -14,6 +14,6 @@
     "ytdl-core": "^4.11.5",
     "instagram-url-direct": "^2.0.7",
     "tiktok-scraper": "^1.4.36",
-    "fb-video-downloader": "^1.0.4"
+    "fb-video-downloader": "^1.0.3"
   }
 }
